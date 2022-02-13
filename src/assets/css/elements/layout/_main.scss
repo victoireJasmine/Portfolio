@@ -1,0 +1,24 @@
+.profile{
+    text-align: center;
+    background: linear-gradient(0deg,$white 50%, $default 50%);
+   
+    img{
+       
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+.desc{
+    &--about-me{
+        margin-top: 30px;
+    }
+    &--skills{
+        margin-top: 30px;
+    }
+}
+.rea{
+    margin-top: 70px ;
+}

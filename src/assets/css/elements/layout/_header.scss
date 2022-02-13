@@ -1,0 +1,38 @@
+header{
+    background-color: $default;
+    a{
+        color: $black
+    }
+    
+}
+.title{
+    background: url($bg) no-repeat center center;
+    margin-top: 60px;
+    background-size: 73em;
+    height: 450px;
+    background-position-x: 79%;
+    background-position-y: 20%;
+    .container{
+        display: flex;
+        
+    }
+    &--block{
+        text-transform: uppercase;
+        width: 72%;
+        margin: auto;
+        margin-top: 110px;
+        color: $default;
+        padding-left: 4px;
+        h1{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        p{
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+
+
+    
+}

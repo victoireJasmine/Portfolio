@@ -1,5 +1,14 @@
-$red: red;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import "elements/reboot";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "elements/variables";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "elements/mixins";
+@import "elements/fonctions";
+@import "elements/utilities";
+@import "elements/layout";
+@import "elements/components";
 
-body{
-    background-color: $red;
-}
+
