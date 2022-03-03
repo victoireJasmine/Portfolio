@@ -1,7 +1,5 @@
 .skills{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+   
 
     &--item{
         display: inline-block;
@@ -12,6 +10,7 @@
         cursor: pointer;
         position: relative;
         overflow: hidden;
+        margin-right: 8px;
 
        
     
@@ -43,4 +42,66 @@
     }
    
 
+}
+.btn{
+    font-size: 120%;
+
+
+}
+.btn-primary{
+    background-color: $default;
+    border: 1px solid $default;
+    &:hover{
+
+    }
+}
+.icon-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+
+    .icon{
+        font-size: 30px;
+        display: inline-block;
+        border: 2px solid $default;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        transition: all 35ms ease-in-out;
+        &.linkedin:hover{
+            color: $white;
+            border-color: #0077b5;
+            background: #0077b5;
+
+        }
+        &.github:hover{
+            color: $white;
+            border-color: #6e5494;
+            background: #6e5494
+
+
+        }
+        &.envelope:hover{
+            color: $white;
+            border-color: #f5bf5d;
+            background: #f5bf5d;
+
+
+        }
+        &.phone:hover{
+            color: $white;
+            border-color: #25d366;
+            background: #25d366;
+
+
+        }
+        
+    }
+    
 }
