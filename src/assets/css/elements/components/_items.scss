@@ -1,4 +1,17 @@
 .skills{
+    display: flex;
+    flex-wrap: wrap;
+
+
+    &--container{
+        flex: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+
+    }
    
 
     &--item{
@@ -11,6 +24,11 @@
         position: relative;
         overflow: hidden;
         margin-right: 8px;
+        @include tablet{
+            width: 60px;
+            height: 60px;
+
+        }
 
        
     
@@ -103,5 +121,6 @@
         }
         
     }
+   
     
 }

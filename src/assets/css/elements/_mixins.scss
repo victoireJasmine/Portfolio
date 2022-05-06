@@ -1,0 +1,23 @@
+//responsive 
+//tablet
+@mixin tablet{
+    @media(min-width: 760px){
+        @content;
+    }
+}
+//desktop
+@mixin desktop{
+    @media(min-width:1020px){
+        @content;
+    }
+}
+//common
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//fix-full
+@mixin fix-full{
+    
+}

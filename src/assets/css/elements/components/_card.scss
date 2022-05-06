@@ -1,11 +1,24 @@
 .rea--items{
+    @include tablet{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        
+    }
     .rea--item{
         text-align: center;
         color: $black;
         display: block;
         margin: 25px 0 35px 0;
+        @include tablet{
+            width: 48%;
+        }
+        
         .rea--desc{
             margin-top: 15px;
+            
         }
         .rea--illustration{
             width: 100%;
@@ -44,6 +57,9 @@
             margin-bottom: 8px!important;
 
         }
+    }
+    @include desktop{
+
     }
 
 }

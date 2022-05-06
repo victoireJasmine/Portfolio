@@ -8,11 +8,16 @@ nav{
     left: 0;
     right: 0;
     z-index: 100;
+    @include tablet{
+        
+    }
     .container{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        
     }
+   
 }
 
 .burger-menu{
@@ -21,7 +26,7 @@ nav{
         font-size: 40px;
     
     }  
-    
+     
 }
 div.close{
     padding: 15px;
@@ -32,7 +37,11 @@ div.close{
     
     }  
     
+    
 }
+
+    
+
 .menu{
     position: fixed;
     width: 100%;
@@ -48,15 +57,44 @@ div.close{
     text-transform: uppercase;
     transform: translate(100%, 0);
     transition: transform 0.3s ease-in-out;
+    @include tablet{
+        display: block;
+        transform: unset; // pour enlever le transform
+        width: auto;
+        height: auto;
+        overflow: unset; // Pour enlever le debordement aucune chose ne deborde du container
+        position: initial;
+        font-size: 16px;
+
+
+        
+    }
     &--list{
         text-align: center;
+        @include tablet{
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            text-decoration: none;
+            
+        }
     }
     &.show{
         transform: translate(0,0);
+        
 
     }
     li{
         padding: 5px 0;
+        a{
+        
+            @include tablet{
+                padding: 5px 15px;
+
+            }
+
+        }
     }
+
    
  }

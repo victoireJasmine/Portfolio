@@ -1,6 +1,13 @@
 body{
     font-family: $poppins-font;
     font-size: $size-mobile;
+    @include tablet{
+        font-size: $size-tablet;
+
+    }
+    @include desktop{
+       
+    }
 }
 a{
     text-decoration: none;
@@ -19,4 +26,143 @@ h2{
 .col{
     width: 100% !important;
     
+}
+@include tablet{
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .col-tb-1{
+        flex: 0 0 8.333333%;// taille que l'on attribue 
+        max-width: 8.333333%;
+    }
+    .col-tb-2{
+        flex: 0 0 16.666667%;// taille que l'on attribue 
+        max-width: 16.666667%;
+    }
+    .col-tb-3{
+        flex: 0 0 25%;// taille que l'on attribue 
+        max-width: 25%;
+    }
+    .col-tb-4{
+        flex: 0 0 33.333333%;// taille que l'on attribue 
+        max-width: 33.333333%;
+    }
+    .col-tb-5{
+        flex: 0 0 41.666667%;// taille que l'on attribue 
+        max-width: 41.666667%;
+    }
+    .col-tb-6{
+        flex: 0 0 50%;// taille que l'on attribue 
+        max-width: 50%;
+    }
+    .col-tb-7{
+        flex: 0 0 58.333333%;// taille que l'on attribue 
+        max-width: 58.333333%;
+    }
+    .col-tb-8{
+        flex: 0 0 66.666667%;// taille que l'on attribue 
+        max-width: 66.666667%;
+    }
+    .col-tb-9{
+        flex: 0 0 75%;// taille que l'on attribue 
+        max-width: 75%;
+    }
+    .col-tb-10{
+        flex: 0 0 83.333333%;// taille que l'on attribue 
+        max-width: 83.333333%;
+    }
+    .col-tb-11{
+        flex: 0 0 91.666667%;// taille que l'on attribue 
+        max-width: 91.666667%;
+    }
+    .col-tb-12{
+        flex: 0 0 100%;// taille que l'on attribue 
+        max-width: 100%;
+    }
+   
+
+}
+
+@include desktop{
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .col-dt-1{
+        flex: 0 0 8.333333%;// taille que l'on attribue 
+        max-width: 8.333333%;
+    }
+    .col-dt-2{
+        flex: 0 0 16.666667%;// taille que l'on attribue 
+        max-width: 16.666667%;
+    }
+    .col-dt-3{
+        flex: 0 0 25%;// taille que l'on attribue 
+        max-width: 25%;
+    }
+    .col-dt-4{
+        flex: 0 0 33.333333%;// taille que l'on attribue 
+        max-width: 33.333333%;
+    }
+    .col-dt-5{
+        flex: 0 0 41.666667%;// taille que l'on attribue 
+        max-width: 41.666667%;
+    }
+    .col-dt-6{
+        flex: 0 0 50%;// taille que l'on attribue 
+        max-width: 50%;
+    }
+    .col-dt-7{
+        flex: 0 0 58.333333%;// taille que l'on attribue 
+        max-width: 58.333333%;
+    }
+    .col-dt-8{
+        flex: 0 0 66.666667%;// taille que l'on attribue 
+        max-width: 66.666667%;
+    }
+    .col-dt-9{
+        flex: 0 0 75%;// taille que l'on attribue 
+        max-width: 75%;
+    }
+    .col-dt-10{
+        flex: 0 0 83.333333%;// taille que l'on attribue 
+        max-width: 83.333333%;
+    }
+    .col-dt-11{
+        flex: 0 0 91.666667%;// taille que l'on attribue 
+        max-width: 91.666667%;
+    }
+    .col-dt-12{
+        flex: 0 0 100%;// taille que l'on attribue 
+        max-width: 100%;
+    }
+   
+
+}
+
+.mobile{
+    @include tablet{
+     display: none !important;
+
+    }
+
+}
+.tablet{
+    display: none;
+    @include tablet{
+     display: block !important;
+
+    }
+
+}
+.desktop{
+    display: none;
+    @include desktop{
+     display: block !important;
+
+    }
+
 }

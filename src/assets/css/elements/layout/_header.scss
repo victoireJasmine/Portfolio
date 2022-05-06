@@ -4,32 +4,93 @@ header{
         color: $black
     }
     
+    
 }
 .title{
-    background: url($bg) no-repeat center center;
+    background: url($bg) no-repeat;
     margin-top: 60px;
-    background-size: 73em;
-    height: 450px;
+    background-size: 240%;
+    height: 60vh;
     background-position-x: 79%;
     background-position-y: 20%;
+    @include tablet{
+        margin-top: 40px;
+        padding-top: 40px;
+       background-size: 90%;
+       height: 35vh;
+       background-position-x: 85%;
+
+
+    }
+    @include desktop{
+        height: 85vh;
+        background-size: 75%;
+        background-position-x: 100%;
+    }
     .container{
         display: flex;
+        @include tablet{
+            justify-content: flex-start;
+            align-items: center;
+            height:70%;
+            
+            
+
+        }
+        @include desktop{
+            height: 68%;
+        }
         
     }
     &--block{
         text-transform: uppercase;
-        width: 72%;
+        width: 70%;
         margin: auto;
-        margin-top: 110px;
+        margin-top: 14vh;
         color: $default;
         padding-left: 4px;
+        @include tablet{
+            width: 50%;
+            color: $black;
+            margin: unset;
+        
+        }
+        @include desktop{
+            width: 40%;
+            
+        }
+        
+
         h1{
             font-weight: bold;
             font-size: 25px;
+            @include tablet{
+                font-size: 35px;
+                
+            }
+            @include desktop{
+                font-size: 45px;
+                &::after{
+                    content: " ";
+                    display: block;
+                    width: 80px;
+                    height: 6px;
+                    background-color: $secondary;
+                    margin-top: 5px;
+                    
+                }
+            }
         }
         p{
             font-weight: bold;
             font-size: 18px;
+            @include tablet{
+                font-size: 23px;
+            }
+            @include desktop{
+                font-size: 30px;
+                margin-top: 15px;
+            }
         }
     }
 

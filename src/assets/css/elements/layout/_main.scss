@@ -1,6 +1,11 @@
 .profile{
     text-align: center;
     background: linear-gradient(0deg,$white 50%, $default 50%);
+    @include tablet{
+        background: transparent;
+        
+
+    }
    
     img{
        
@@ -9,7 +14,19 @@
         height: 150px;
         object-fit: cover;
         object-position: 50% 50%;
+        @include tablet{
+            border-radius: 0%;
+            width: 100%;
+            position: relative;
+            top: -100px;
+            height: 500px;
+            filter: drop-shadow(15px 10px 10px rgba(0, 0, 0, 0.2));
+
+            
+        }
+        @in
     }
+    
 }
 .desc{
     &--about-me{
@@ -18,7 +35,10 @@
     &--skills{
         margin-top: 30px;
     }
+    
 }
 .rea{
     margin-top: 70px ;
+    
+    
 }

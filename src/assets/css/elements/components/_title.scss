@@ -4,6 +4,9 @@
     font-weight: bold;
     font-size: 25px;
     margin: 20px 0;
+    @include tablet{
+        text-align: left;
+    }
     &::after{
         content: " ";
         display: block;
@@ -12,5 +15,10 @@
         background-color: $secondary;
         margin: auto;
         margin-top: 5px;
+        @include tablet {
+            margin: unset;
+            margin-top: 5px;
+            
+        }
     }
 }
