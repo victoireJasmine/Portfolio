@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="acceuil">
         
             <nav> 
                 <div class="container">
@@ -18,11 +19,11 @@
                         <a  href="#"><i class="fa fa-times"></i></a>
                     </div>
                     <ul class="menu--list">
-                        <li><a href="#">Acceuil</a></li>
-                        <li><a href="#">A propos</a></li>
-                        <li><a href="#">Realisations</a></li>
-                        <li><a href="#">Cv</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#acceuil">Acceuil</a></li>
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#rea">Realisations</a></li>
+                        <li><a href="./assets/doc/Victoire ondelet.pdf" target="blank">Cv</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 </div>
@@ -31,7 +32,8 @@
             </nav>
             <div class="title">
                 <div class="container">
-                    <div class="title--block">
+                    <div class="title--block" data-aos="fade-down" data-aos-duration="2000" 
+                    data-aos-easing="linear">
                         <h1> Victoire ONDELET</h1>
                         <p> Developpeur web fullstack</p>
                     </div>
@@ -43,14 +45,14 @@
     </header>
 
 
-    <main>
-        <section id="about">
+    <main> 
+        <section id="about" class="about">
             <div class="container">
-                <div class="row">
+                <div class="row-v">
                     <div class="col-tb-6 col-dt-5 col profile" >
                         <img src="./assets/img/profil.jpg" alt="profile">
                     </div>
-                    <div class="col-tb-6 col-dt-7 col desc">
+                    <div class="col-tb-6 col-dt-7 col desc" data-aos="fade-up" data-aos-duration="3000">
                         <div class="desc--about-me">
                             <h1 class="h-title"> à propos</h1>
                             <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias provident quas voluptatem! Hic, nulla similique! Autem earum, asperiores libero amet ipsam explicabo m</p>
@@ -72,6 +74,18 @@
                                     </div>
                                 </div>
                                 
+                                <div class="skills--container">
+                                    <div class="skills--item">
+                                        <img src="./assets/img/js.png" alt="JS">
+                                        <div class="skills--bg"></div>
+                                    </div>
+                                </div>
+                                <div class="skills--container">
+                                    <div class="skills--item">
+                                        <img src="./assets/img/js.png" alt="JS">
+                                        <div class="skills--bg"></div>
+                                    </div>
+                                </div>
                                 <div class="skills--container">
                                     <div class="skills--item">
                                         <img src="./assets/img/js.png" alt="JS">
@@ -126,7 +140,7 @@
         </section>
         <section id = "rea" class="rea">
             <div class="container">
-                <h1 class="h-title">mes réalisations</h1>
+                <h1 class="h-title" data-aos="fade-right" data-aos-duration="2000">mes réalisations</h1>
             <div class="rea--items">
                 <a href="#" class="rea--item" target="_blank">
                     <div class="rea--illustration">
@@ -212,8 +226,8 @@
                 
                 
             </div>
-            <div >
-                <a href="#" class="btn btn-primary col">
+            <div class="text-center mt-4" >
+                <a href="#" class="btn btn-primary col-tb-4 m-auto col">
                     voir plus
                 </a>
             </div>
@@ -234,13 +248,28 @@
 
     <footer>
         <div class="container">
-            <section class="block-footer">
-                <h1 class="h-title"> me contacter </h1>
+            <section id="contact" class="block-footer text-center">
+                <div>
+                    <h1 class="h-title inline"> me contacter </h1>
+                </div>
+                
                 <div class="icon-contact">
-                    <a class="icon linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                    <a class="icon github" href="#"><i class="fa fa-github"></i></a>
-                    <a class="icon envelope" href="#"><i class="fa fa-envelope"></i></a>
-                    <a class="icon phone" href="#"><i class="fa fa-phone"></i></a>
+                    <div class="icon-container">
+                        <a class="icon linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <a class="icon github" href="#"><i class="fa fa-github"></i></a>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <a class="icon envelope" href="#"><i class="fa fa-envelope"></i></a>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <a class="icon phone" href="#"><i class="fa fa-phone"></i></a>
+                    </div>
+                   
                 </div>
                
             </section>
@@ -255,6 +284,11 @@
 
     
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

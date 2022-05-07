@@ -1,9 +1,9 @@
 .rea--items{
     @include tablet{
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-flow: column wrap;
+        max-height: 2500px;
+        align-content: space-between;
         
         
     }
@@ -14,6 +14,14 @@
         margin: 25px 0 35px 0;
         @include tablet{
             width: 48%;
+           block-size: border-box;
+           &:first-child .rea--illustration, &:last-child .rea--illustration{
+
+            height: 250px;
+            
+
+        }
+           
         }
         
         .rea--desc{
@@ -24,9 +32,14 @@
             width: 100%;
             position: relative;
             height: 200px;
+            @include tablet{
+                height: 450px;
+                
+            }
             img{
                 width: 100%;
                 height: 100%;
+
             }
             .rea--bg{
                 position: absolute;

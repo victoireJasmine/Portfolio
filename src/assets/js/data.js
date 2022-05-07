@@ -1,4 +1,4 @@
-const items =[
+/*const items =[
     {id:1, type:"page web", title:"calculatrice", img:"realisation.jpg", link:"calculatrice.net"},
     {id:2, type:"page web", title:"calculatrice", img:"realisation.jpg", link:"calculatrice.net"},
    
@@ -30,4 +30,6 @@ if ($displayItems) {
         
     });
     
-}
+}*/
+const $img = require("/static/img/realisation.jpg");
+console.log($img);

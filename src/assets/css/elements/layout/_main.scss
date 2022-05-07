@@ -3,7 +3,8 @@
     background: linear-gradient(0deg,$white 50%, $default 50%);
     @include tablet{
         background: transparent;
-        
+        padding-right:30px;
+
 
     }
    
@@ -24,13 +25,18 @@
 
             
         }
-        @in
+        
     }
     
 }
 .desc{
     &--about-me{
+        padding-left:15px ;
+        padding-right: 15px;
         margin-top: 30px;
+        @include tablet{
+            padding: 0;
+        }
     }
     &--skills{
         margin-top: 30px;
@@ -41,4 +47,17 @@
     margin-top: 70px ;
     
     
+}
+.about{
+    .container{
+        padding: 0;
+        @include tablet{
+            padding-left: 15px;
+            padding-right: 15px;
+
+
+        }
+    }
+    position: relative;
+
 }

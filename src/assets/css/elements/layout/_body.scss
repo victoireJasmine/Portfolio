@@ -28,7 +28,7 @@ h2{
     
 }
 @include tablet{
-    .row{
+    .row-v{
         display: flex;
         flex-wrap: wrap;
     
@@ -86,11 +86,6 @@ h2{
 }
 
 @include desktop{
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-    
-    }
     .col-dt-1{
         flex: 0 0 8.333333%;// taille que l'on attribue 
         max-width: 8.333333%;
@@ -165,4 +160,20 @@ h2{
 
     }
 
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-inline: auto;
+    @include tablet{
+        width: 93% ;
+        max-width: 93%;
+
+
+    }
+    @include desktop{
+        width: 90%;
+        max-width: 1170px;
+        
+    }
 }
