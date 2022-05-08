@@ -31,5 +31,5 @@ if ($displayItems) {
     });
     
 }*/
-const $img = require("/static/img/realisation.jpg");
-console.log($img);
+/*const $img = require("/static/img/realisation.jpg");
+console.log($img);*/
