@@ -1,12 +1,15 @@
 footer{
     margin-top: 70px;
     margin-bottom: 50px;
+    
 
 }
 .block-footer{
     border: 2px solid $default;
     padding: 15px 0;
     background-color: rgba($color: $secondary, $alpha: 0.25);
+    padding-top: 30px;
+    padding-bottom: 80px;
 
 }
 .formulaire{
